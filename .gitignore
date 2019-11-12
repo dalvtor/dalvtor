@@ -1,0 +1,17 @@
+logs/
+media/
+node_modules/
+.sass-cache/
+.idea
+.vscode/
+db/
+sent_emails/
+env/
+staticfiles/
+*.pyc
+db.sqlite3
+package.json
+package-lock.json
+.DS_Store
+.env
+.coverage

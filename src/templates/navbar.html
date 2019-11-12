@@ -1,0 +1,46 @@
+<nav class="flex items-center justify-between flex-wrap border-b mb-6 items-center">
+    <div class="flex items-center justify-between flex-wrap py-2 container mx-auto px-10">
+        <div class="flex items-center flex-shrink-0 mr-6">
+            <a href="{% url 'index' %}" class="font-semibold text-xl hover:text-indigo-500">
+                Dalvtor
+            </a>
+        </div>
+        <div class="inline-block flex-grow flex items-center w-auto">
+            <div class="text-sm flex-grow">
+                <a href="{% url 'blog:post-list' %}" class="nav-link font-semibold">
+                    Blog
+                </a>
+                <a href="{% url 'blog:post-list' %}" class="nav-link font-semibold">
+                    About
+                </a>
+            </div>
+            <div>
+                {% load helpers %}
+                <form class="w-full max-w-sm" action="{% url 'blog:post-list' %}">
+                    <div class="flex items-center bg-gray-200 rounded focus">
+                        <div class="flex-grow">
+                            <label class="hidden" for="search">Search</label>
+                            <input id="search"
+                                   class="rounded bg-gray-200 w-full py-2 px-4 text-gray-800 focus:outline-none appearance-none"
+                                   type="text" placeholder="Search" name="q" value="{{ request.GET.q }}"
+                                   title="Search">
+                        </div>
+                        <div class="flex">
+                            <button id="search-button"
+                                    class="hover:bg-gray-400 focus:outline-none text-white font-bold py-2 px-3 rounded"
+                                    type="submit"
+                                    title="Search"
+                                    role="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path class="heroicon-ui"
+                                          d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
