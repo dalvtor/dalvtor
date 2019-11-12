@@ -41,6 +41,3 @@ class Tag(ModelBase):
         self.slug = slugify(self.label)
         super().save(*args, **kwargs)
 
-    def clean(self):
-        super().clean()
-        self.label = self.label.capitalize()
