@@ -10,30 +10,34 @@
     @apply bg-indigo-400 text-white;
 }
 
-.section-header{
+.section-header {
     @apply block uppercase tracking-tight text-gray-700 text-xs font-semibold mb-2;
 }
 
-.post-title{
+.post-title {
     @apply text-gray-900 font-semibold text-2xl;
 }
 
-.post-title:hover{
+.post-title:hover {
     @apply text-indigo-500;
 }
 
-.post-summary{
+.post-summary {
     @apply text-gray-700 mb-3 font-light;
 }
 
-pre code {
-  @apply text-sm my-3;
+p {
+    @apply text-sm mb-3;
 }
 
-.nav-link{
+pre code {
+    @apply text-sm my-3;
+}
+
+.nav-link {
     @apply text-gray-700 mr-6 inline-block;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     @apply text-indigo-500;
 }
