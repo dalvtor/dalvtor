@@ -2,6 +2,7 @@
   "name": "dalvtor",
   "version": "1.0.0",
   "scripts": {
+    "build-css": "npx tailwind build src/static/css/styles.css -o src/static/css/app.css",
     "minify-css": "postcss src/static/css/app.css > src/static/css/app.min.css"
   },
   "dependencies": {

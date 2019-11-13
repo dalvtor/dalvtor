@@ -8,7 +8,8 @@ module.exports = {
             preset: 'default',
         }),
         purgecss({
-            content: ['./**/*.html']
+            content: ['./**/*.html'],
+            defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
         })
     ],
 };
