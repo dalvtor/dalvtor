@@ -19,7 +19,7 @@ services:
       APP_ENV: ${APP_ENV}
       SECRET_KEY: ${SECRET_KEY}
     ports:
-      - "8002:8000"
+      - "8001:8000"
     depends_on:
       - postgres
   postgres:
