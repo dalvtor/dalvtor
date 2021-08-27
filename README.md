@@ -1,5 +1,5 @@
 # Dalvtor
-This repository contains the code that powers my personal site, https://dalvtor.com
+This repository contains a simple blog application written in Django
 
 ## How to run this locally
 
